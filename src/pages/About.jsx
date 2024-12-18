@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import picture from "../images/download.png";
-import robotPicture from "../images/png-transparent-robotics-3d-computer-graphics-three-dimensional-space-border-robot-white-robot-template-3d-computer-graphics-computer-3d-thumbnail-removebg-preview.png";
-import stulpai from "../images/stulpai.png";
+import picture from "../../public/images/me.png";
+import robotPicture from "../../public/images/robot.png";
+import stulpai from "../../public/images/stulpai.png";
 import Nav from "../components/Nav";
 import Animation from "../components/Animation";
 

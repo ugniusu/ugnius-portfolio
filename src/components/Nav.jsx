@@ -2,7 +2,7 @@ import React from "react";
 import { FaFile, FaLayerGroup, FaPuzzlePiece } from "react-icons/fa";
 import { FaHouse, FaUser, FaLinkedin, FaGithub } from "react-icons/fa6";
 import NavItem from "./NavItem";
-import UgniusCV from "../cv/Ugnius-CV.pdf";
+import UgniusCV from "../../public/cv/Ugnius-CV.pdf";
 
 export default function Nav() {
   return (

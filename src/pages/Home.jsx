@@ -1,4 +1,4 @@
-import laptop from "../images/uS7Xm-removebg-previewda.png";
+import laptop from "../../public/images/uS7Xm-removebg-previewda.png";
 import Nav from "../components/Nav";
 import Animation from "../components/Animation";
 import { motion } from "framer-motion";
