@@ -5,6 +5,7 @@ import Skills from "./Skills";
 import About from "./About";
 import Projects from "./Projects";
 import PageNotFound from "../components/PageNotFound";
+import Contact from "./Contact";
 
 function AppLayout() {
   const location = useLocation();
@@ -16,6 +17,7 @@ function AppLayout() {
         <Route path="/skills" element={<Skills />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </AnimatePresence>

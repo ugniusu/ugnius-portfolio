@@ -21,7 +21,7 @@ const NavItem = ({ to, icon: Icon, label }) => {
                 isActive ? "text-primary-500" : "group-hover:text-primary-500"
               }`}
             />
-            {label}
+            <span className="hidden lg:inline">{label}</span>
           </>
         )}
       </NavLink>

@@ -1,57 +1,66 @@
-function Project() {
+import { FaLink } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
+
+function Project({ project, className }) {
   return (
-    <div className="bg-accent-850 rounded-lg shadow-lg p-6 max-w-sm mx-auto">
-      {/* Project Image */}
+    <div className={className}>
       <div className="relative mb-4">
         <img
-          src="https://via.placeholder.com/400x250" // Replace with your project image
-          alt="Project screenshot"
-          className="rounded-lg object-cover w-full h-48"
+          src={project.image}
+          alt={project.alt}
+          className="rounded-t-lg object-cover w-full h-48 transition-all z-10"
         />
       </div>
 
-      {/* Project Title */}
-      <h2 className="text-white text-xl font-semibold mb-2">
-        AUK Employment Opportunities
-      </h2>
+      <div className="p-5 flex flex-col flex-grow">
+        <h2 className="text-white text-xl font-semibold mb-2">
+          {project.title}
+        </h2>
 
-      {/* Project Description */}
-      <p className="text-accent-100 text-sm opacity-80 mb-4">
-        This is a sample project description. Random things are here in the
-        description. This is a sample project lorem ipsum generator for dummy
-        content.
-      </p>
+        <p className="text-accent-100 text-xs md:text-sm opacity-80 mb-4">
+          {project.description}
+        </p>
 
-      {/* Tags */}
-      <div className="flex flex-wrap gap-2 mb-6">
-        <span className="bg-primary-700 bg-opacity-50 text-primary-200 px-3 py-1 text-xs rounded-md">
-          HTML
-        </span>
-        <span className="bg-primary-700 bg-opacity-50 text-primary-200 px-3 py-1 text-xs rounded-md">
-          TailwindCSS
-        </span>
-        <span className="bg-primary-700 bg-opacity-50 text-primary-200 px-3 py-1 text-xs rounded-md">
-          Vue.js
-        </span>
-        <span className="bg-primary-700 bg-opacity-50 text-primary-200 px-3 py-1 text-xs rounded-md">
-          Laravel
-        </span>
-      </div>
+        <div className="mt-auto">
+          <div className="flex flex-wrap gap-2 mb-6">
+            {project.stack.map((el) => (
+              <p
+                className="bg-accent-700 rounded-md px-2 text-xs md:text-sm hover:scale-110 transition-all"
+                key={el}
+              >
+                {el}
+              </p>
+            ))}
+          </div>
 
-      {/* Links */}
-      <div className="flex justify-between items-center">
-        <a
-          href="#"
-          className="text-primary-400 text-sm font-medium hover:underline"
-        >
-          Live Preview
-        </a>
-        <a
-          href="#"
-          className="text-primary-400 text-sm font-medium hover:underline"
-        >
-          View Code
-        </a>
+          <div className="flex justify-between items-center">
+            {project.url === "" ? (
+              ""
+            ) : (
+              <div className="flex gap-2">
+                <FaLink className="text-accent-100" />
+                <a
+                  href={project.url}
+                  target="_blank"
+                  className="text-accent-100 text-xs md:text-sm font-medium hover:underline"
+                >
+                  Live Preview
+                </a>
+              </div>
+            )}
+
+            <div className="flex gap-2">
+              <FaGithub className="text-accent-100" />
+              <a
+                href={project.github}
+                target="_blank"
+                className="text-accent-100 text-xs md:text-sm font-medium hover:underline"
+              >
+                View Code
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

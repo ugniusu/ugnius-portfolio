@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+section::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.section-scroll {
+  scrollbar-width: none;
+}
+
+.section-scroll {
+  -ms-overflow-style: none; /* Hide scrollbar in Internet Explorer 10+ */
+  overflow: scroll;
+}
+
+@layer components {
+  .bg-custom-svg {
+    background-image: url("/src/images/Polygon.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
