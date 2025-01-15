@@ -19,8 +19,21 @@ section::-webkit-scrollbar {
 
 @layer components {
   .bg-custom-svg {
-    background-image: url("/src/images/Polygon.svg");
+    background-image: url("/src/images/Shapes.svg");
     background-repeat: no-repeat;
     background-size: cover;
   }
+}
+
+.particles canvas {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.bg-img {
+  background-image: url("/src/images/me2.jpg");
+  background-size: cover;
+  background-position: center;
 }
