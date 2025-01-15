@@ -1,18 +1,9 @@
 import laptop from "../images/uS7Xm-removebg-previewda.png";
 import Navigation from "../components/Navigation";
-import bg from "../images/bg.png";
 
 const Home = () => {
   return (
-    <main
-      className="flex h-screen bg-accent-900 text-accent-100 bg-custom-svg"
-      style={{
-        backgroundImage: `url(${bg})`,
-        backgroundSize: "cover", // Ensures the background covers the entire container
-        backgroundPosition: "center", // Centers the background
-        backgroundRepeat: "no-repeat", // Prevents tiling
-      }}
-    >
+    <main className="flex h-screen bg-accent-900 text-accent-100 bg-custom-svg">
       <aside className="z-10">
         <Navigation />
       </aside>

@@ -37,7 +37,7 @@ function ContactComponent() {
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="mx-auto p-6 rounded-lg shadow-md w-1/3 bg-accent-850 border-primary-800 border"
+        className="mx-auto p-6 text-xs lg:text-sm rounded-lg shadow-md w-1/2 2xl:w-1/3 bg-accent-850 border-primary-800 border"
       >
         <input
           type="text"
@@ -62,7 +62,7 @@ function ContactComponent() {
           id="message"
           placeholder="Message"
           required
-          className="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 resize-none"
+          className="w-full h-24 p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 resize-none"
         />
 
         <input
