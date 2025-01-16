@@ -1,7 +1,7 @@
 import { useState } from "react";
-import picture from "../images/me.png";
-import robotPicture from "../images/robot.png";
-import stulpai from "../images/stulpai.png";
+import picture from "/me.png";
+import robotPicture from "/robot.png";
+import stulpai from "/stulpai.png";
 import Navigation from "../components/Navigation";
 
 const About = () => {

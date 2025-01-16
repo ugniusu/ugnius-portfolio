@@ -1,4 +1,4 @@
-import UgniusCV from "../cv/Ugnius-CV.pdf";
+import UgniusCV from "/cv/Ugnius-CV.pdf";
 import Navigation from "../components/Navigation";
 import SocialLinks from "../components/SocialLinks";
 import TypingAnimation from "../components/TypingAnimation";

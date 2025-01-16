@@ -13,7 +13,7 @@ export const projects = [
     ],
     description:
       "The Wild Oasis is a full-stack project that allows users to reserve a cabin for a specific period. The platform integrates Google authentication for secure user login and utilizes Supabase API endpoints for handling backend operations, such as reservation management and data storage. The project combines a modern, responsive design with seamless functionality to ensure an effortless booking experience.",
-    image: "/src/images/projects/the-wild-oasis.png",
+    image: "/projects/the-wild-oasis.png",
     url: "https://the-wild-oasis-self-mu.vercel.app",
     github: "https://github.com/ugniusu/The-Wild-Oasis",
   },
@@ -24,7 +24,7 @@ export const projects = [
     stack: ["MongoDB", "Express", "JWT", "Axios", "React", "bcrypt"],
     description:
       "This project is a full-stack advertisement platform where users can register, log in, and post items for sale or browse items to purchase. It features a user-friendly interface for managing profiles and viewing detailed listings. An admin panel allows administrators to oversee the platform by managing registered users, including viewing and deleting accounts, as well as moderating advertisements to ensure content quality.",
-    image: "/src/images/projects/AdPage.png",
+    image: "/projects/AdPage.png",
     url: "",
     github: "https://github.com/orgs/AdVantage-page/repositories",
   },
@@ -35,7 +35,7 @@ export const projects = [
     stack: ["React", "React Query", "Styled Components", "Recharts"],
     description:
       "A comprehensive full-stack application for managing The Wild Oasis, utilizing Supabase for backend functionality, including authentication, data management, and CRUD operations.",
-    image: "/src/images/projects/the-wildlife-oasis.png",
+    image: "/projects/the-wildlife-oasis.png",
     url: "https://api-countries-kappa.vercel.app",
     github: "https://github.com/ugniusu/countries-API",
   },
@@ -46,7 +46,7 @@ export const projects = [
     stack: ["React", "API"],
     description:
       "This is my first simple web application that provides detailed information about countries using an API. Users can explore data about each country, including essential details such as population, capital, and region. The application features filtering options to browse countries by continent or search for specific countries using a search bar.",
-    image: "/src/images/projects/countries.png",
+    image: "/projects/countries.png",
     url: "https://api-countries-kappa.vercel.app",
     github: "https://github.com/ugniusu/countries-API",
   },
@@ -57,7 +57,7 @@ export const projects = [
     stack: ["Leaflet", "CSS Modules", "React Router", "React"],
     description:
       "A practical project that integrates a city data API with the Leaflet map library, allowing users to log their travel experiences by marking visited cities. This interactive map interface showcases expertise in frontend development and seamless API integration, providing users with an engaging and dynamic travel-tracking tool that brings real-world data to life.",
-    image: "/src/images/projects/world-wise-app.jpeg",
+    image: "/projects/world-wise-app.jpeg",
     url: "https://world-wise-react-vite.vercel.app",
     github: "https://github.com/ugniusu/WorldWise-React-Vite",
   },
