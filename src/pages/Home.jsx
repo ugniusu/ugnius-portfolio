@@ -1,8 +1,8 @@
 import UgniusCV from "../cv/Ugnius-CV.pdf";
 import Navigation from "../components/Navigation";
-import ParticlesComponent from "../components/particles";
 import SocialLinks from "../components/SocialLinks";
 import TypingAnimation from "../components/TypingAnimation";
+import ParticlesComponent from "../components/ParticlesComponent";
 
 const Home = () => {
   const rotatingText = ["A Developer.", "Ugnius Uscilas."];
