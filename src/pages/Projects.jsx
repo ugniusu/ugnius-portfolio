@@ -30,12 +30,10 @@ function Projects() {
   }, []);
 
   return (
-    <main className="flex h-screen bg-accent-900 text-accent-100 overflow-auto custom-scroll">
-      <aside className="z-10">
-        <Navigation />
-      </aside>
+    <main className="flex h-full  text-accent-100">
+      <Navigation />
 
-      <div className="flex flex-col flex-1 mx-auto overflow-auto">
+      <div className="flex flex-col flex-1 mx-auto pt-24">
         <h1 className="text-xl xl:text-4xl font-bold text-center text-primary-500 mt-10">
           Things I&apos;ve built so far
         </h1>

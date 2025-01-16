@@ -12,30 +12,28 @@ const About = () => {
   }
 
   return (
-    <section className="flex flex-row h-screen bg-accent-900">
-      <aside className="w-1/5 md:w-auto">
-        <Navigation />
-      </aside>
+    <section className="flex flex-row h-screen bg-accent-900 pt-24">
+      <Navigation />
 
-      <section className="flex flex-col justify-center items-center relative w-2/3 md:w-[75%] h-full mx-auto p-4 md:p-6 lg:p-8">
+      <section className="flex flex-col justify-center items-center relative w-2/3 h-full mx-auto p-4 md:p-6 lg:p-8">
         <h1 className="text-primary-500 text-xl md:text-2xl font-medium text-center py-2 md:py-4">
           About Me
         </h1>
 
-        <div className="bg-accent-850 flex flex-col justify-center items-center relative w-full max-w-[95%] lg:max-w-[80%] h-auto m-4 md:m-6 p-4 md:p-6 border border-primary-500 rounded-xl">
+        <div className="bg-accent-850 flex flex-col justify-center items-center relative w-full lg:max-w-[80%] h-auto m-4 md:m-6 p-4 md:p-6 border border-primary-500 rounded-xl">
           <img
             src={picture}
             alt="Me in dark background"
             className="w-24 md:w-36 lg:w-48 h-24 md:h-36 lg:h-48 rounded-full object-cover mb-4 md:mb-6"
           />
 
-          <div className="absolute right-[-37px] md:right-[-56px] lg:right-[-77px] top-0">
+          <div className="absolute right-[-37px] md:right-[-56px] lg:right-[-62px] 2xl:right-[-79px] top-0">
             <img
               src={robotPicture}
               alt="Robot"
-              className="w-[120px] md:w-[180px] lg:w-[250px]"
+              className="w-[120px] md:w-[180px] lg:w-[200px] 2xl:w-64"
             />
-            <p className="absolute right-10 md:right-20 lg:right-28 top-28 md:top-40 lg:top-48 text-white bg-transparent border-2 border-primary-500 rounded-lg px-2 md:px-3 py-1 md:py-2 backdrop-blur-sm text-xs md:text-sm lg:text-base">
+            <p className="absolute right-10 md:right-20 lg:right-42 2xl:top-48 2xl:right-36 top-28 md:top-40 text-white bg-transparent border-2 border-primary-500 rounded-lg px-2 md:px-3 py-1 md:py-2 backdrop-blur-sm text-xs md:text-sm lg:text-sm">
               That&apos;s true
             </p>
           </div>
@@ -97,7 +95,7 @@ const About = () => {
           <img
             src={stulpai}
             alt="Gediminaiciu stulpai"
-            className="hidden md:block md:w-12 lg:w-24 2xl:w-32 absolute left-2 bottom-0"
+            className="hidden md:block md:w-12 lg:w-20 2xl:w-32 absolute left-2 bottom-0"
           />
         </div>
       </section>

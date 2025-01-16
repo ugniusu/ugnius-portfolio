@@ -1,6 +1,7 @@
+import UgniusCV from "../cv/Ugnius-CV.pdf";
 import Navigation from "../components/Navigation";
 import ParticlesComponent from "../components/particles";
-// import laptop from "../images/uS7Xm-removebg-previewda.png";
+import SocialLinks from "../components/SocialLinks";
 import TypingAnimation from "../components/TypingAnimation";
 
 const Home = () => {
@@ -11,13 +12,11 @@ const Home = () => {
       <div className="absolute inset-0 bg-black opacity-80"></div>
       <ParticlesComponent id="particles" />
 
-      <aside className="z-20">
-        <Navigation />
-      </aside>
+      <Navigation />
 
       <section className="relative z-20 flex flex-col items-center justify-center py-64 w-1/2 h-1/2 mx-auto rounded-lg mt-24">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-wider my-20">
-          <span className="text-primary-500">&lt;</span>
+          <span className="text-primary-500">&lt; </span>
           Ugnius
           <span className="text-primary-500"> /&gt;</span>
         </h1>
@@ -25,9 +24,20 @@ const Home = () => {
         <p className="text-2xl mb-8 opacity-20">Hello & Nice to meet you</p>
 
         <div className="flex flex-col items-center">
-          <p className="text-6xl">
+          <p className="text-3xl md:text-4xl xl:text-6xl">
             I am <TypingAnimation texts={rotatingText} period={2000} />
           </p>
+        </div>
+
+        <div className="mt-8 flex flex-col justify-center items-center">
+          <SocialLinks />
+          <a
+            href={UgniusCV}
+            download="Ugnius-Uscilas.pdf"
+            className="text-sm md:text-2xl mt-8 border-2 rounded-3xl py-1 px-4"
+          >
+            Download CV
+          </a>
         </div>
       </section>
     </main>

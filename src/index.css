@@ -17,13 +17,13 @@ section::-webkit-scrollbar {
   overflow: scroll;
 }
 
-@layer components {
+/* @layer components {
   .bg-custom-svg {
     background-image: url("/src/images/Shapes.svg");
     background-repeat: no-repeat;
     background-size: cover;
   }
-}
+} */
 
 .particles canvas {
   z-index: -1;

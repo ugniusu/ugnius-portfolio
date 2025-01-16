@@ -24,14 +24,14 @@ function ContactComponent() {
         },
         (error) => {
           console.log("FAILED...", error.text);
-          setIsSending(false); // Reset sending state on failure
+          setIsSending(false);
         }
       );
   };
 
   return (
     <div className="w-full flex flex-col items-center justify-center">
-      <h2 className="mb-10 text-4xl font-semibold text-primary-50">
+      <h2 className="mb-10 text-4xl font-semibold text-primary-500">
         Contact Me !
       </h2>
       <form

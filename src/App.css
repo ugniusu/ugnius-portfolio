@@ -5,6 +5,13 @@
   text-align: center;
 } */
 
+html,
+body {
+  @apply bg-accent-900 text-accent-100;
+  height: 100%;
+  margin: 0;
+}
+
 /* .triangle-down {
   position: absolute;
   top: 100px;
