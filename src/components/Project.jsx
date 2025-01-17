@@ -1,5 +1,6 @@
 import { FaLink } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
+import TextExpander from "./TextExpander";
 
 function Project({ project, className }) {
   return (
@@ -17,9 +18,11 @@ function Project({ project, className }) {
           {project.title}
         </h2>
 
-        <p className="text-accent-100 text-xs md:text-sm opacity-80 mb-4">
+        <TextExpander>
+          {/* <p className="text-accent-100 text-xs md:text-sm opacity-80 mb-4"> */}
           {project.description}
-        </p>
+          {/* </p> */}
+        </TextExpander>
 
         <div className="mt-auto">
           <div className="flex flex-wrap gap-2 mb-6">

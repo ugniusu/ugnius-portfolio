@@ -17,8 +17,6 @@ export default function Navigation() {
     };
   }, []);
 
-  console.log(isScrolled);
-
   return (
     <nav
       className={`flex justify-center items-center gap-10 p-4 fixed top-0 left-0 w-full z-10 transition-colors duration-300 ${
