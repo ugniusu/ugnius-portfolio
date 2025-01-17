@@ -34,7 +34,7 @@ const TypingAnimation = ({ texts, period }) => {
   }, [text, isDeleting, loopNum, texts, typingSpeed]);
 
   return (
-    <span className="text-primary-300 text-3xl md:text-5xl xl:text-6xl">
+    <span className="text-primary-300 text-xl sm:text-2xl md:text-5xl xl:text-6xl">
       {text}
     </span>
   );

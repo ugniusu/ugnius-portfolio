@@ -15,16 +15,18 @@ const Home = () => {
       <Navigation />
 
       <section className="relative z-20 flex flex-col items-center justify-center py-64 w-1/2 h-1/2 mx-auto rounded-lg mt-24">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-wider my-20">
+        <h1 className="text-3xl md:text-6xl lg:text-7xl font-bold tracking-wider my-20">
           <span className="text-primary-500">&lt; </span>
           Ugnius
           <span className="text-primary-500"> /&gt;</span>
         </h1>
 
-        <p className="text-2xl mb-8 opacity-20">Hello & Nice to meet you</p>
+        <p className="text-lg md:text-3xl sm:text-2xl mb-8 opacity-20">
+          Hello & Nice to meet you
+        </p>
 
         <div className="flex flex-col items-center">
-          <p className="text-3xl md:text-4xl xl:text-6xl">
+          <p className="text-xl sm:text-2xl md:text-4xl xl:text-6xl">
             I am <TypingAnimation texts={rotatingText} period={2000} />
           </p>
         </div>
