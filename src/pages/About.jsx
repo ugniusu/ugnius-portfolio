@@ -41,7 +41,7 @@ const About = () => {
           <h3 className="text-white text-lg md:text-xl font-medium">
             Hi, I am
           </h3>
-          <h1 className="text-primary-500 text-xl md:text-2xl lg:text-3xl font-bold mb-4 md:mb-6 lg:mb-8">
+          <h1 className="text-primary-400 text-xl md:text-2xl lg:text-3xl font-bold mb-4 md:mb-6 lg:mb-8">
             Ugnius Uscilas
           </h1>
 
