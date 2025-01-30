@@ -16,11 +16,11 @@ const About = () => {
       <Navigation />
 
       <section className="flex flex-col justify-center items-center relative w-2/3 h-full mx-auto p-4 md:p-6 lg:p-8">
-        <h1 className="text-primary-500 text-xl md:text-2xl font-medium text-center py-2 md:py-4">
+        <h1 className="text-primary-400 text-xl md:text-2xl font-bold text-center py-2 md:py-4">
           About Me
         </h1>
 
-        <div className="bg-accent-850 flex flex-col justify-center items-center relative w-full lg:max-w-[80%] h-auto m-4 md:m-6 p-4 md:p-6 border border-primary-500 rounded-xl">
+        <div className="bg-accent-850 flex flex-col justify-center items-center relative w-full lg:max-w-[80%] h-auto m-4 md:m-6 p-4 md:p-6 border border-primary-400 rounded-xl">
           <img
             src={picture}
             alt="Me in dark background"
@@ -33,7 +33,7 @@ const About = () => {
               alt="Robot"
               className="w-[120px] md:w-[180px] lg:w-[200px] 2xl:w-64"
             />
-            <p className="absolute right-10 md:right-20 lg:right-42 2xl:top-48 2xl:right-36 top-28 md:top-40 text-white bg-transparent border-2 border-primary-500 rounded-lg px-2 md:px-3 py-1 md:py-2 backdrop-blur-sm text-xs md:text-sm lg:text-sm">
+            <p className="absolute right-10 md:right-20 lg:right-42 2xl:top-48 2xl:right-36 top-28 md:top-40 text-white bg-transparent border-2 border-primary-400 rounded-lg px-2 md:px-3 py-1 md:py-2 backdrop-blur-sm text-xs md:text-sm lg:text-sm">
               That&apos;s true
             </p>
           </div>
@@ -47,16 +47,16 @@ const About = () => {
 
           <div className="flex gap-2 md:gap-4 lg:gap-6">
             <button
-              className={`px-3 md:px-4 lg:px-6 py-1 md:py-2 font-semibold text-xs lg:text-md 2xl:text-lg rounded-md border border-primary-500 text-accent-50 bg-accent-850 hover:bg-blue-400 hover:text-accent-50 transition-all ${
-                active === "aboutMe" ? "bg-primary-500 text-accent-50" : ""
+              className={`px-3 md:px-4 lg:px-6 py-1 md:py-2 font-semibold text-xs lg:text-md 2xl:text-lg rounded-md border border-primary-400 text-accent-50 bg-accent-850 hover:bg-primary-400 hover:text-accent-50 transition-all ${
+                active === "aboutMe" ? "bg-primary-400 text-accent-50" : ""
               }`}
               onClick={() => handleTabClick("aboutMe")}
             >
               About me
             </button>
             <button
-              className={`px-3 md:px-4 lg:px-6 py-1 md:py-2 font-semibold text-xs lg:text-md 2xl:text-lg rounded-md border border-primary-500 text-accent-50 bg-accent-850 hover:bg-primary-500 hover:text-accent-50 transition-all ${
-                active === "personalBio" ? "bg-primary-500 text-accent-50" : ""
+              className={`px-3 md:px-4 lg:px-6 py-1 md:py-2 font-semibold text-xs lg:text-md 2xl:text-lg rounded-md border border-primary-400 text-accent-50 bg-accent-850 hover:bg-primary-400 hover:text-accent-50 transition-all ${
+                active === "personalBio" ? "bg-primary-400 text-accent-50" : ""
               }`}
               onClick={() => handleTabClick("personalBio")}
             >
@@ -64,11 +64,11 @@ const About = () => {
             </button>
           </div>
 
-          <div className="flex flex-col justify-center items-center mt-4 md:mt-6 w-[95%] md:w-[85%] lg:w-[70%] border border-primary-500 rounded-lg shadow-lg px-3 md:px-4 lg:px-6 py-2 md:py-3 lg:py-4 min-h-[8rem] md:min-h-[10rem] lg:min-h-[12rem]">
+          <div className="flex flex-col justify-center items-center mt-4 md:mt-6 w-[95%] md:w-[85%] lg:w-[70%] border border-primary-400 rounded-lg shadow-lg px-3 md:px-4 lg:px-6 py-2 md:py-3 lg:py-4 min-h-[8rem] md:min-h-[10rem] lg:min-h-[12rem]">
             {active === "aboutMe" && (
               <p className="text-accent-50 text-center text-xs md:text-sm 2xl:text-lg">
                 Aspiring{" "}
-                <span className="text-primary-500 font-medium">
+                <span className="text-primary-300 font-medium">
                   &lt;front-end developer /&gt;
                 </span>{" "}
                 with a background from KITM studies and 1 year of self-taught

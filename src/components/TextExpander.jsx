@@ -14,7 +14,7 @@ function TextExpander({ children }) {
       {displayText}{" "}
       {isExpandable && (
         <button
-          className="text-primary-500 border-b border-primary-700 leading-3 pb-1"
+          className="text-primary-300 border-b border-primary-300 leading-3 pb-1"
           onClick={() => setIsExpanded(!isExpanded)}
         >
           {isExpanded ? "Show less" : "Show more"}

@@ -12,7 +12,7 @@ const Skills = () => {
 
       <section className="flex flex-col justify-center items-center w-full px-5">
         <Animation />
-        <h1 className="text-primary-500 text-center tracking-wider pt-12 mb-12 text-2xl z-10">
+        <h1 className="text-primary-400 text-center tracking-wider pt-12 mb-12 text-4xl z-10 font-bold">
           Skills
         </h1>
         <div className="flex justify-center items-center w-full">

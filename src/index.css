@@ -33,7 +33,7 @@ section::-webkit-scrollbar {
 }
 
 .bg-img {
-  background-image: url("/me2.jpg");
+  background-image: url("/bg-5.jpg");
   background-size: cover;
   background-position: center;
 }

@@ -19,9 +19,7 @@ function Project({ project, className }) {
         </h2>
 
         <TextExpander>
-          {/* <p className="text-accent-100 text-xs md:text-sm opacity-80 mb-4"> */}
           {project.description}
-          {/* </p> */}
         </TextExpander>
 
         <div className="mt-auto">

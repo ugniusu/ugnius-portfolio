@@ -34,7 +34,7 @@ function Projects() {
       <Navigation />
 
       <div className="flex flex-col flex-1 mx-auto pt-24">
-        <h1 className="text-xl xl:text-4xl font-bold text-center text-primary-500 mt-10">
+        <h1 className="text-xl xl:text-4xl font-bold text-center text-primary-400 mt-10">
           Things I&apos;ve built so far
         </h1>
         <section className="grid xl:grid-cols-2 gap-8 mt-10 w-1/2 mx-auto">

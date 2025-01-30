@@ -31,7 +31,7 @@ function ContactComponent() {
 
   return (
     <div className="w-full flex flex-col items-center justify-center">
-      <h2 className="mb-10 text-4xl font-semibold text-primary-500">
+      <h2 className="mb-10 text-4xl font-semibold text-primary-400">
         Contact Me !
       </h2>
       <form
@@ -45,7 +45,7 @@ function ContactComponent() {
           id="user_name"
           placeholder="Name"
           required
-          className="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-4 focus:ring-primary-300"
         />
 
         <input
@@ -54,7 +54,7 @@ function ContactComponent() {
           id="user_email"
           placeholder="Email"
           required
-          className="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-4 focus:ring-primary-300"
         />
 
         <textarea
@@ -62,15 +62,15 @@ function ContactComponent() {
           id="message"
           placeholder="Message"
           required
-          className="w-full h-24 p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 resize-none"
+          className="w-full h-24 p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-4 focus:ring-primary-300 resize-none"
         />
 
         <input
           type="submit"
           value={isSending ? "Sending..." : "Send"}
           disabled={isSending}
-          className={`w-full p-3 text-white rounded-lg cursor-pointer transition-colors duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-400 ${
-            isSending ? "bg-accent-400" : "bg-blue-500 hover:bg-blue-600"
+          className={`w-full p-3 text-white font-bold text-lg rounded-lg cursor-pointer transition-colors duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-primary-300 ${
+            isSending ? "bg-accent-400" : "bg-primary-500 hover:bg-primary-400"
           }`}
         />
       </form>
