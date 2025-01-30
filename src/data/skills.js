@@ -18,6 +18,8 @@ import {
   SiReactrouter,
   SiStyledcomponents,
   SiTailwindcss,
+  SiTypescript,
+  SiWebpack,
 } from "react-icons/si";
 
 export const skills = [
@@ -122,5 +124,17 @@ export const skills = [
     skill: "Next.js",
     icon: SiNextdotjs,
     color: "#fff",
+  },
+  {
+    id: 18,
+    skill: "TypeScript",
+    icon: SiTypescript,
+    color: "#3178c6",
+  },
+  {
+    id: 18,
+    skill: "Webpack",
+    icon: SiWebpack,
+    color: "#8dd3f9",
   },
 ];
