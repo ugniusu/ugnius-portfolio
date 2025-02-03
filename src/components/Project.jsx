@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 function Project({ project }) {
   return (
-    <div>
+    <li>
       <div className="relative mb-4">
         <img
           src={project.image}
@@ -62,7 +62,7 @@ function Project({ project }) {
           </div>
         </div>
       </div>
-    </div>
+    </li>
   );
 }
 

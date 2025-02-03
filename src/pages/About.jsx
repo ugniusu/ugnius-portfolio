@@ -4,6 +4,7 @@ import robotPicture from "/robot.png";
 import stulpai from "/stulpai.png";
 import Navigation from "../components/Navigation";
 import { motion } from "framer-motion";
+import HText from "../components/HText";
 
 const About = () => {
   const [active, setActive] = useState("aboutMe");
@@ -17,9 +18,7 @@ const About = () => {
       <Navigation />
 
       <section className="flex flex-col justify-center items-center relative w-2/3 h-full mx-auto p-4 md:p-6 lg:p-8">
-        <h1 className="text-primary-400 text-xl md:text-4xl font-bold text-center py-2 md:py-4">
-          About Me
-        </h1>
+        <HText>About me</HText>
 
         <motion.div
           initial="hidden"

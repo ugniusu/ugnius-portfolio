@@ -133,13 +133,13 @@ export const skills = [
     color: "#3178c6",
   },
   {
-    id: 18,
+    id: 19,
     skill: "Webpack",
     icon: SiWebpack,
     color: "#8dd3f9",
   },
   {
-    id: 19,
+    id: 20,
     skill: "Framer Motion",
     icon: TbBrandFramerMotion,
     color: "#ff00f7",

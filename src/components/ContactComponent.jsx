@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
+import HText from "./HText";
 
 function ContactComponent() {
   const [isSending, setIsSending] = useState(false);
@@ -32,9 +33,9 @@ function ContactComponent() {
 
   return (
     <div className="w-full flex flex-col items-center justify-center">
-      <h2 className="mb-10 text-4xl font-bold text-primary-400">
+      <HText className="mb-10 text-4xl font-bold text-primary-400 text-center font-montserrat">
         Contact Me !
-      </h2>
+      </HText>
       <form
         ref={form}
         onSubmit={sendEmail}

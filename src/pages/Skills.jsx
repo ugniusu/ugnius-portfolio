@@ -2,6 +2,7 @@ import { skills } from "../data/skills";
 import Skill from "../components/Skill";
 import Navigation from "../components/Navigation";
 import Animation from "../components/Animation";
+import HText from "../components/HText";
 
 const Skills = () => {
   return (
@@ -12,9 +13,7 @@ const Skills = () => {
 
       <section className="flex flex-col justify-center items-center w-full px-5">
         <Animation />
-        <h1 className="text-primary-400 text-center tracking-wider pt-12 mb-12 text-4xl z-10 font-bold">
-          Skills
-        </h1>
+        <HText>Skills</HText>
         <div className="flex justify-center items-center w-full">
           <ul className="flex flex-wrap gap-6 max-w-xl">
             {skills.map((skill) => (
