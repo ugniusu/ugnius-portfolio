@@ -1,10 +1,11 @@
 import { FaLink } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import TextExpander from "./TextExpander";
+import { motion } from "framer-motion";
 
-function Project({ project, className }) {
+function Project({ project }) {
   return (
-    <div className={className}>
+    <div>
       <div className="relative mb-4">
         <img
           src={project.image}
@@ -18,9 +19,7 @@ function Project({ project, className }) {
           {project.title}
         </h2>
 
-        <TextExpander>
-          {project.description}
-        </TextExpander>
+        <TextExpander>{project.description}</TextExpander>
 
         <div className="mt-auto">
           <div className="flex flex-wrap gap-2 mb-6">

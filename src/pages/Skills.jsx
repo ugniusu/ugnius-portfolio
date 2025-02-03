@@ -1,7 +1,7 @@
 import { skills } from "../data/skills";
 import Skill from "../components/Skill";
-import Animation from "../components/Animation";
 import Navigation from "../components/Navigation";
+import Animation from "../components/Animation";
 
 const Skills = () => {
   return (

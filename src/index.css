@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,14 +19,6 @@ section::-webkit-scrollbar {
   overflow: scroll;
 }
 
-/* @layer components {
-  .bg-custom-svg {
-    background-image: url("/src/images/Shapes.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-} */
-
 .particles canvas {
   z-index: -1;
   height: 100%;
@@ -36,4 +30,19 @@ section::-webkit-scrollbar {
   background-image: url("/bg-5.jpg");
   background-size: cover;
   background-position: center;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-blink {
+  animation: blink 1s infinite;
 }

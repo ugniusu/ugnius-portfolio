@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 
 function ContactComponent() {
   const [isSending, setIsSending] = useState(false);
@@ -31,7 +32,7 @@ function ContactComponent() {
 
   return (
     <div className="w-full flex flex-col items-center justify-center">
-      <h2 className="mb-10 text-4xl font-semibold text-primary-400">
+      <h2 className="mb-10 text-4xl font-bold text-primary-400">
         Contact Me !
       </h2>
       <form
@@ -39,36 +40,48 @@ function ContactComponent() {
         onSubmit={sendEmail}
         className="mx-auto p-6 text-xs lg:text-sm rounded-lg shadow-md w-1/2 2xl:w-1/3 bg-accent-850 border-primary-800 border"
       >
-        <input
+        <motion.input
           type="text"
           name="user_name"
           id="user_name"
           placeholder="Name"
           required
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
           className="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-4 focus:ring-primary-300"
         />
 
-        <input
+        <motion.input
           type="email"
           name="user_email"
           id="user_email"
           placeholder="Email"
           required
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
           className="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-4 focus:ring-primary-300"
         />
 
-        <textarea
+        <motion.textarea
           name="message"
           id="message"
           placeholder="Message"
           required
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
           className="w-full h-24 p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-4 focus:ring-primary-300 resize-none"
         />
 
-        <input
+        <motion.input
           type="submit"
           value={isSending ? "Sending..." : "Send"}
           disabled={isSending}
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
           className={`w-full p-3 text-white font-bold text-lg rounded-lg cursor-pointer transition-colors duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-primary-300 ${
             isSending ? "bg-accent-400" : "bg-primary-500 hover:bg-primary-400"
           }`}

@@ -3,6 +3,7 @@ import picture from "/me.png";
 import robotPicture from "/robot.png";
 import stulpai from "/stulpai.png";
 import Navigation from "../components/Navigation";
+import { motion } from "framer-motion";
 
 const About = () => {
   const [active, setActive] = useState("aboutMe");
@@ -16,11 +17,21 @@ const About = () => {
       <Navigation />
 
       <section className="flex flex-col justify-center items-center relative w-2/3 h-full mx-auto p-4 md:p-6 lg:p-8">
-        <h1 className="text-primary-400 text-xl md:text-2xl font-bold text-center py-2 md:py-4">
+        <h1 className="text-primary-400 text-xl md:text-4xl font-bold text-center py-2 md:py-4">
           About Me
         </h1>
 
-        <div className="bg-accent-850 flex flex-col justify-center items-center relative w-full lg:max-w-[80%] h-auto m-4 md:m-6 p-4 md:p-6 border border-primary-400 rounded-xl">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          className="bg-accent-850 flex flex-col justify-center items-center relative w-full lg:max-w-[80%] h-auto m-4 md:m-6 p-4 md:p-6 border border-primary-400 rounded-xl"
+        >
           <img
             src={picture}
             alt="Me in dark background"
@@ -97,7 +108,7 @@ const About = () => {
             alt="Gediminaiciu stulpai"
             className="hidden md:block md:w-12 lg:w-20 2xl:w-32 absolute left-2 bottom-0"
           />
-        </div>
+        </motion.div>
       </section>
     </section>
   );

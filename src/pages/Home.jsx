@@ -15,7 +15,7 @@ const Home = () => {
       <Navigation />
 
       <section className="relative z-20 flex flex-col items-center justify-center py-64 w-1/2 h-1/2 mx-auto rounded-lg mt-24">
-        <h1 className="text-3xl md:text-6xl lg:text-7xl font-bold tracking-wider my-20">
+        <h1 className="text-3xl md:text-6xl lg:text-7xl font-bold tracking-wider my-20 font-montserrat">
           <span className="text-primary-500">&lt; </span>
           Ugnius
           <span className="text-primary-500"> /&gt;</span>

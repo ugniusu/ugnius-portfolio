@@ -21,6 +21,7 @@ import {
   SiTypescript,
   SiWebpack,
 } from "react-icons/si";
+import { TbBrandFramerMotion } from "react-icons/tb";
 
 export const skills = [
   {
@@ -136,5 +137,11 @@ export const skills = [
     skill: "Webpack",
     icon: SiWebpack,
     color: "#8dd3f9",
+  },
+  {
+    id: 19,
+    skill: "Framer Motion",
+    icon: TbBrandFramerMotion,
+    color: "#ff00f7",
   },
 ];

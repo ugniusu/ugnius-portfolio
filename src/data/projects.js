@@ -61,4 +61,15 @@ export const projects = [
     url: "https://world-wise-react-vite.vercel.app",
     github: "https://github.com/ugniusu/WorldWise-React-Vite",
   },
+  {
+    id: 6,
+    title: "EVOGYM",
+    alt: "EVOGYM Project screenshot",
+    stack: ["React", "TypeScript", "Framer Motion", "Tailwind CSS"],
+    description:
+      "Evogym is a sleek and interactive fitness website built with React and TypeScript, designed to provide users with an engaging experience while exploring gym services. The website features dynamic animations, a responsive layout, and a structured component-based architecture.",
+    image: "/projects/evogym.png",
+    url: "https://typescript-gym-nine.vercel.app",
+    github: "https://github.com/ugniusu/typescript-gym",
+  },
 ];

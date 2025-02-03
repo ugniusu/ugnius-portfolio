@@ -32,6 +32,9 @@ export default {
           950: "#0f0f0f",
         },
       },
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
+      },
       keyframes: {
         moveTriangleDown: {
           "0%": { transform: "translateY(-50%)" },
@@ -55,6 +58,10 @@ export default {
             transform: "translate(320%, 300%) scale(1.4)",
           },
         },
+        blink: {
+          "0%, 50%": { opacity: 1 },
+          "50%, 100%": { opacity: 0 },
+        },
       },
       animation: {
         moveTriangleDown: "moveTriangleDown 3s ease forwards",
@@ -62,6 +69,7 @@ export default {
         moveTriangleDown2: "moveTriangleDown2 3s ease forwards",
         moveTriangleUp2: "moveTriangleUp2 5s ease forwards",
         bubbleBounce: "bubbleBounce 5s ease forwards",
+        blink: "blink 1s infinite",
       },
     },
   },
